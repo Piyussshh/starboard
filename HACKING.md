@@ -34,7 +34,7 @@ $ make test
 
 Code generators are used a lot in the implementation of native Kubernetes resources, and we're using the very same
 generators here for custom security resources. This project follows the patterns of
-[k8s.io/sample-controller][k8s-sample-controller], which is a blueprint for many controllers built in Kubernetes itself.
+[k8s.io/sample-controller][k8s-sample-controller], which is a blueprint for many controllers built-in Kubernetes itself.
 
 The code generation starts with:
 
@@ -46,7 +46,7 @@ $ ./hack/update-codegen.sh
 
 In addition, there is a second script called `./hack/verify-codegen.sh`. This script calls the
 `./hack/update-codegen.sh` script and checks whether anything changed, and then it terminates with a nonzero return
-code if any of the generated files is not up-to-date. We're running it as a step in the CI/CD pipeline.
+code if any of the generated files are not up-to-date. We're running it as a step in the CI/CD pipeline.
 
 ## Using Generated Code
 
